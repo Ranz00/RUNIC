@@ -56,7 +56,7 @@ body {
    Encabezado — título principal de la plataforma
    ---------------------------------------------- */
 header {
-  padding: 0.3rem 2rem;
+  padding: 0.2rem 2rem;
   background-color: var(--surface);
   border-bottom: 2px solid rgba(107, 124, 255, 0.12);
 }
@@ -65,7 +65,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.1rem;
+  gap: 0;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -90,7 +90,8 @@ header {
 
 .logo-text p {
   color: var(--muted);
-  font-size: 0.8rem;
+  font-size: 1rem;
+  margin-top: -0.3rem;
 }
 
 /* ----------------------------------------------
