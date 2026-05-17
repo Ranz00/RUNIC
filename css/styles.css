@@ -1,23 +1,23 @@
 /* ==============================================
-   🜁  RUNIC — Hojas de Estilo
+   RUNIC — Hojas de Estilo
    ==============================================
-   Paleta inspirada en runas nórdicas y antiguas
-   piedras rúnicas. Tonos tierra, oro místico y
-   matices profundos pero no oscuros.
+   Paleta inspirada en cielo nocturno con tonos
+   azul profundo y púrpura sutil. Un degradado
+   que evoca profesionalismo y tecnología.
    ============================================== */
 
 /* ----------------------------------------------
-   Variables de color — inspiración rúnica
+   Variables de color — azul cielo nocturno
    ---------------------------------------------- */
 :root {
-  --bg: #1c1628;
-  --surface: #2d2640;
-  --accent: #d4a843;
-  --text: #e8dcc8;
-  --muted: #8a7e72;
-  --danger: #bf4040;
-  --warning: #b8860b;
-  --success: #4a8c5e;
+  --bg: #0f1729;
+  --surface: #1e2740;
+  --accent: #6b8cff;
+  --text: #e8edf4;
+  --muted: #8899b0;
+  --danger: #e85555;
+  --warning: #d4a843;
+  --success: #4a9e6e;
   --nav-height: 60px;
 }
 
@@ -40,7 +40,8 @@ body {
   background-color: var(--bg);
   background-image: radial-gradient(
     ellipse at 50% 0%,
-    #2d1f3a 0%,
+    #1c2a4a 0%,
+    #141d33 40%,
     var(--bg) 70%
   );
   color: var(--text);
@@ -63,7 +64,7 @@ header h1 {
   color: var(--accent);
   font-size: 2.5rem;
   letter-spacing: 0.15em;
-  text-shadow: 0 0 20px hsla(42, 60%, 55%, 0.2);
+  text-shadow: 0 0 24px hsla(226, 100%, 71%, 0.25);
 }
 
 header p {
@@ -130,7 +131,7 @@ main {
 .hero {
   text-align: center;
   padding: 4rem 1rem 2rem;
-  background: linear-gradient(135deg, var(--surface) 0%, #2a1c33 100%);
+  background: linear-gradient(135deg, #1e2d50 0%, #1a2040 50%, #151e38 100%);
   border-radius: 12px;
   margin-bottom: 2rem;
 }
@@ -186,9 +187,9 @@ section > p {
   background: linear-gradient(
     145deg,
     var(--surface) 0%,
-    #252035 100%
+    #19213a 100%
   );
-  border: 1px solid rgba(212, 168, 67, 0.15);
+  border: 1px solid rgba(107, 140, 255, 0.15);
   border-radius: 10px;
   padding: 2rem;
   text-decoration: none;
@@ -202,7 +203,7 @@ section > p {
 .card:hover {
   border-color: var(--accent);
   transform: translateY(-6px);
-  box-shadow: 0 8px 24px rgba(212, 168, 67, 0.1);
+  box-shadow: 0 8px 24px rgba(107, 140, 255, 0.15);
 }
 
 .card h3 {
@@ -313,7 +314,7 @@ section > p {
 }
 
 .señal:hover {
-  background-color: hsla(42, 60%, 55%, 0.15);
+  background-color: hsla(226, 100%, 71%, 0.15);
 }
 
 /* ----------------------------------------------
@@ -358,7 +359,7 @@ section > p {
   border-radius: 4px;
   font-size: 0.8rem;
   font-weight: bold;
-  color: #1c1628;
+  color: #ffffff;
   text-transform: uppercase;
 }
 
@@ -381,7 +382,7 @@ section > p {
   background-color: var(--surface);
   border-radius: 8px;
   line-height: 1.6;
-  border: 1px solid rgba(212, 168, 67, 0.1);
+  border: 1px solid rgba(107, 140, 255, 0.1);
 }
 
 .details h4 {
@@ -419,8 +420,8 @@ input[type='password'] {
 }
 
 button[type='submit'] {
-  background: linear-gradient(135deg, var(--accent), #c49530);
-  color: var(--bg);
+  background: linear-gradient(135deg, var(--accent), #4a6fd4);
+  color: #ffffff;
   padding: 0.6rem 1.5rem;
   border: none;
   border-radius: 6px;
@@ -458,7 +459,7 @@ footer {
   padding: 1.5rem;
   color: var(--muted);
   font-size: 0.85rem;
-  border-top: 1px solid rgba(212, 168, 67, 0.08);
+  border-top: 1px solid rgba(107, 140, 255, 0.08);
 }
 
 /* ----------------------------------------------
