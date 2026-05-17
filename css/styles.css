@@ -56,23 +56,34 @@ body {
    Encabezado — título principal de la plataforma
    ---------------------------------------------- */
 header {
-  text-align: center;
-  padding: 3rem 1rem 1.5rem;
+  padding: 1.5rem 2rem;
   background-color: var(--surface);
   border-bottom: 2px solid rgba(107, 124, 255, 0.12);
 }
 
-header h1 {
-  color: var(--accent);
-  font-size: 2.5rem;
-  letter-spacing: 0.15em;
-  text-shadow: 0 0 28px hsla(231, 100%, 71%, 0.3);
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-header p {
+.logo {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo svg {
+  display: block;
+}
+
+.logo-text p {
   color: var(--muted);
-  margin-top: 0.35rem;
-  font-size: 1.05rem;
+  font-size: 0.85rem;
 }
 
 /* ----------------------------------------------
@@ -490,12 +501,8 @@ footer {
     padding: 1.5rem;
   }
 
-  header {
-    padding: 2rem 1rem 1rem;
-  }
-
-  header h1 {
-    font-size: 1.8rem;
+  .logo img {
+    height: 36px;
   }
 
   .hero {
