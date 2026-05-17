@@ -88,6 +88,7 @@ header {
   width: 100%;
   height: auto;
   border-radius: 6px;
+  mix-blend-mode: screen;
 }
 
 .logo-text p {
