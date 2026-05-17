@@ -1,5 +1,14 @@
-// password.js
+// =============================================
+//  Verificador de fortaleza de contraseñas
+//  Analiza la contraseña en tiempo real mientras
+//  el usuario escribe y muestra el nivel de
+//  seguridad mediante una barra y una lista
+//  de requisitos cumplidos o faltantes.
+// =============================================
 
+// Las contraseñas más comunes y débiles que todo
+// el mundo usa. Si la contraseña está aquí, 
+// automáticamente se considera insegura.
 const commonPasswords = [
   '123456',
   'password',
@@ -23,7 +32,10 @@ const commonPasswords = [
   'superman',
 ]
 
-// Función para analizar la contraseña
+// Analiza la contraseña y devuelve un puntaje
+// del 0 al 4 según qué tan segura es.
+// Revisa: longitud, mayúsculas, números, símbolos
+// y si está en la lista de contraseñas comunes.
 function analyzePassword(pwd) {
   let score = 0
   const hasLength = pwd.length >= 8
@@ -40,17 +52,19 @@ function analyzePassword(pwd) {
   return { score, hasLength, hasUpper, hasNumber, hasSymbol, isCommon }
 }
 
-// Función para actualizar la barra de fuerza
+// Actualiza la barra visual según el puntaje.
+// 0-1 = débil (rojo), 2-3 = medio (naranja), 4 = fuerte (verde)
 function updateStrengthBar(score) {
   const strengthBar = document.getElementById('strength-bar')
-  strengthBar.className = '' // Remover clases anteriores
+  strengthBar.className = ''
 
   if (score <= 1) strengthBar.classList.add('weak')
   else if (score <= 3) strengthBar.classList.add('medium')
   else strengthBar.classList.add('strong')
 }
 
-// Función para actualizar el feedback
+// Muestra una lista con cada requisito y si
+// la contraseña lo cumple (✓) o no (✗)
 function updateFeedback(result) {
   const feedback = document.getElementById('password-feedback')
   feedback.innerHTML = ''
@@ -72,7 +86,8 @@ function updateFeedback(result) {
   }
 }
 
-// Escuchar evento input en el campo de contraseña
+// Escucha cada tecla que el usuario escribe en
+// el campo de contraseña y actualiza todo en vivo
 document
   .getElementById('password-input')
   .addEventListener('input', function (event) {

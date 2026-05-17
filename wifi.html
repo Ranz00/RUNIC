@@ -1,3 +1,9 @@
+<!-- =============================================
+  Página: Analizador de Redes Wi-Fi
+  Muestra distintos escenarios de redes Wi-Fi
+  con diferentes niveles de seguridad para que
+  el usuario aprenda a identificar cuál es segura.
+  ============================================= -->
 <!doctype html>
 <html lang="es">
   <head>
@@ -7,6 +13,7 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+
     <header>
       <div class="header-content">
         <h1>RUNIC</h1>
@@ -24,9 +31,20 @@
     </nav>
 
     <main>
+      <!-- 
+        Sección del analizador de redes Wi-Fi.
+        Cada tarjeta representa una red con su
+        tipo de seguridad y nivel de riesgo.
+        El usuario hace clic para ver más detalles.
+      -->
       <section>
         <h2>Redes Wi-Fi</h2>
-        <p>Haz clic en cada red para ver sus detalles de seguridad.</p>
+        <p>Haz clic en cada red para ver sus detalles de seguridad y aprender qué tipo de protección tiene cada una.</p>
+
+        <!-- 
+          Contenedor donde se renderizan las tarjetas
+          de cada red Wi-Fi desde JavaScript
+        -->
         <div id="wifi-list"></div>
       </section>
     </main>

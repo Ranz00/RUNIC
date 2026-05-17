@@ -1,3 +1,9 @@
+<!-- =============================================
+  Página: Simulador de Phishing
+  Muestra correos electrónicos simulados para que
+  el usuario aprenda a identificar enlaces 
+  sospechosos y señales de phishing.
+  ============================================= -->
 <!doctype html>
 <html lang="es">
   <head>
@@ -7,6 +13,7 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+
     <header>
       <div class="header-content">
         <h1>RUNIC</h1>
@@ -24,9 +31,19 @@
     </nav>
 
     <main>
+      <!-- 
+        Sección del simulador de phishing.
+        Cada correo contiene enlaces sospechosos
+        que el usuario debe identificar haciendo clic.
+      -->
       <section>
         <h2>Phishing</h2>
-        <p>Haz clic en los enlaces sospechosos dentro de cada correo para identificarlos.</p>
+        <p>Haz clic en los enlaces sospechosos dentro de cada correo para identificarlos. Aprende a distinguir un correo legítimo de uno fraudulento.</p>
+
+        <!-- 
+          Contenedor donde se renderizan dinámicamente
+          los casos de phishing desde JavaScript
+        -->
         <div id="phishing-container"></div>
       </section>
     </main>

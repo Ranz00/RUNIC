@@ -1,4 +1,15 @@
-// Definición de los casos de phishing
+// =============================================
+//  Simulador de Phishing
+//  Muestra correos electrónicos sospechosos para
+//  que el usuario aprenda a identificar enlaces
+//  fraudulentos (phishing).
+//  Cada correo contiene "señales" (enlaces) que
+//  el usuario debe descubrir haciendo clic.
+// =============================================
+
+// Lista de casos de phishing simulados.
+// Cada caso tiene un remitente, un asunto y un
+// cuerpo que contiene enlaces sospechosos.
 const phishingCases = [
   {
     id: 1,
@@ -23,7 +34,9 @@ const phishingCases = [
   },
 ]
 
-// Función para renderizar los casos de phishing
+// Renderiza todos los casos de phishing dentro
+// del contenedor de la página. Cada caso se 
+// muestra como un "correo electrónico" simulado.
 function renderCases() {
   const container = document.getElementById('phishing-container')
 
@@ -31,7 +44,6 @@ function renderCases() {
     const emailDiv = document.createElement('div')
     emailDiv.className = 'email'
 
-    // Mostrar el remitente, asunto y cuerpo del correo
     emailDiv.innerHTML = `
       <h3>${caso.remitente}</h3>
       <p><strong>Asunto:</strong> ${caso.asunto}</p>
@@ -42,10 +54,11 @@ function renderCases() {
   })
 }
 
-// Llamar a renderCases al cargar el script
 renderCases()
 
-// Event delegation en phishing-container
+// Escucha los clics dentro del contenedor de phishing.
+// Cuando el usuario hace clic en una "señal" (enlace
+// sospechoso), se revela información adicional sobre el caso.
 document
   .getElementById('phishing-container')
   .addEventListener('click', function (event) {
@@ -58,7 +71,8 @@ document
       event.target.appendChild(señalDiv)
       event.target.classList.add('encontrada')
 
-      // Verificar si todas las señales del caso están encontradas
+      // Si todas las señales del caso fueron encontradas,
+      // mostramos un mensaje de caso resuelto
       if (
         event.target.parentElement.querySelectorAll('.señal.encontrada')
           .length ===
