@@ -10,8 +10,8 @@
    Variables de color — azul cielo nocturno
    ---------------------------------------------- */
 :root {
-  --bg: #0c1428;
-  --surface: #1a2542;
+  --bg: #1a2248;
+  --surface: #263060;
   --accent: #3d7aff;
   --text: #e8edf4;
   --muted: #7a8fac;
@@ -38,13 +38,11 @@
    ---------------------------------------------- */
 body {
   background-color: var(--bg);
-  background-image: linear-gradient(
-    160deg,
-    #0f2040 0%,
-    #131838 30%,
-    #1a1035 60%,
-    var(--bg) 100%
-  );
+  background-image:
+    radial-gradient(ellipse at 75% 15%, rgba(61, 122, 255, 0.2) 0%, transparent 55%),
+    radial-gradient(ellipse at 25% 80%, rgba(140, 80, 230, 0.18) 0%, transparent 55%),
+    radial-gradient(ellipse at 50% 40%, rgba(61, 122, 255, 0.06) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 70%, rgba(100, 60, 200, 0.12) 0%, transparent 50%);
   color: var(--text);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding-top: var(--nav-height);
@@ -132,7 +130,10 @@ main {
 .hero {
   text-align: center;
   padding: 4rem 1rem 2rem;
-  background: linear-gradient(135deg, #1a2d60 0%, #1e1a50 50%, #201040 100%);
+  background:
+    radial-gradient(ellipse at 30% 20%, rgba(61, 122, 255, 0.25) 0%, transparent 55%),
+    radial-gradient(ellipse at 80% 80%, rgba(140, 80, 230, 0.2) 0%, transparent 55%),
+    var(--surface);
   border-radius: 12px;
   margin-bottom: 2rem;
 }
