@@ -84,7 +84,7 @@ header {
 }
 
 .logo img {
-  height: 100px;
+  height: 200px;
   width: auto;
 }
 
@@ -509,7 +509,7 @@ footer {
   }
 
   .logo img {
-    height: 70px;
+    height: 130px;
   }
 
   .logo svg {
