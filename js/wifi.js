@@ -61,13 +61,7 @@ function renderWifi() {
     cardDiv.innerHTML = `
       <h3>${wifi.nombre}</h3>
       <p>Tipo: ${wifi.tipo}</p>
-      <span class="badge" style="background-color: ${
-        wifi.riesgo === 'alto'
-          ? 'red'
-          : wifi.riesgo === 'medio'
-            ? 'yellow'
-            : 'green'
-      };">${wifi.riesgo}</span>
+      <span class="badge badge-${wifi.riesgo}">${wifi.riesgo}</span>
       <button onclick="toggleDetails(this)">Ver detalles</button>
     `
 

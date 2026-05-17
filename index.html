@@ -3,66 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RUNIC (Risk & User Network Intelligence Center)</title>
+    <title>RUNIC — Risk & User Network Intelligence Center</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <!-- Encabezado de la página -->
-    <header id="inicio">
-      <h1>BIENVENIDO A RUNIC</h1>
-      <p>Plataforma educativa de ciberseguridad</p>
+    <header>
+      <div class="header-content">
+        <h1>RUNIC</h1>
+        <p>Plataforma educativa de ciberseguridad</p>
+      </div>
     </header>
 
-    <!-- Navegación -->
     <nav>
       <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#password">Contraseñas Seguras</a></li>
-        <li><a href="#phishing">Phishing</a></li>
-        <li><a href="#wifi">Redes Wi-Fi</a></li>
+        <li><a href="index.html" class="active">Inicio</a></li>
+        <li><a href="password.html">Contraseñas</a></li>
+        <li><a href="phishing.html">Phishing</a></li>
+        <li><a href="wifi.html">Redes Wi-Fi</a></li>
       </ul>
     </nav>
 
-    <!-- Contenido principal -->
     <main>
-      <!-- Sección Contraseñas Seguras -->
-      <section id="password">
-        <h2>Contraseñas Seguras</h2>
-        <input
-          type="password"
-          id="password-input"
-          placeholder="Ingresa tu contraseña"
-        />
-        <div id="strength-bar"></div>
-        <div id="password-feedback"></div>
-        <!-- TODO: Funcionalidad para verificar la fortaleza de la contraseña -->
+      <section class="hero">
+        <h2>Bienvenido a RUNIC</h2>
+        <p>Selecciona una herramienta para comenzar</p>
       </section>
 
-      <!-- Sección Phishing -->
-      <section id="phishing">
-        <h2>Phishing</h2>
-        <div id="phishing-container">
-          <!-- TODO: Contenido sobre phishing -->
-        </div>
-      </section>
-
-      <!-- Sección Redes Wi-Fi -->
-      <section id="wifi">
-        <h2>Redes Wi-Fi</h2>
-        <div id="wifi-list">
-          <!-- TODO: Lista de redes Wi-Fi seguras -->
-        </div>
-      </section>
+      <div class="card-grid">
+        <a href="password.html" class="card">
+          <h3>Contraseñas Seguras</h3>
+          <p>Verifica la fortaleza de tus contraseñas y aprende buenas prácticas.</p>
+        </a>
+        <a href="phishing.html" class="card">
+          <h3>Phishing</h3>
+          <p>Aprende a identificar correos electrónicos fraudulentos.</p>
+        </a>
+        <a href="wifi.html" class="card">
+          <h3>Redes Wi-Fi</h3>
+          <p>Analiza la seguridad de distintas redes inalámbricas.</p>
+        </a>
+      </div>
     </main>
 
-    <!-- Pie de página -->
     <footer>
       <p>&copy; RUNIC.</p>
     </footer>
-
-    <!-- Scripts -->
-    <script src="js/password.js"></script>
-    <script src="js/phishing.js"></script>
-    <script src="js/wifi.js"></script>
   </body>
 </html>
