@@ -7,7 +7,7 @@
 // =============================================
 
 // Las contraseñas más comunes y débiles que todo
-// el mundo usa. Si la contraseña está aquí, 
+// el mundo usa. Si la contraseña está aquí,
 // automáticamente se considera insegura.
 const commonPasswords = [
   '123456',

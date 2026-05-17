@@ -107,7 +107,7 @@ function toggleDetails(button) {
 
     // Buscamos la red correspondiente por su nombre
     const wifi = wifiScenarios.find(
-      (w) => w.nombre === card.querySelector('h3').textContent
+      (w) => w.nombre === card.querySelector('h3').textContent,
     )
 
     // Creamos el panel con descripción, ataques y recomendación

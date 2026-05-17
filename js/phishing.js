@@ -35,7 +35,7 @@ const phishingCases = [
 ]
 
 // Renderiza todos los casos de phishing dentro
-// del contenedor de la página. Cada caso se 
+// del contenedor de la página. Cada caso se
 // muestra como un "correo electrónico" simulado.
 function renderCases() {
   const container = document.getElementById('phishing-container')
