@@ -87,8 +87,8 @@ header {
   max-width: 260px;
   width: 100%;
   height: auto;
-  border-radius: 6px;
   mix-blend-mode: screen;
+  filter: brightness(1.6) contrast(2);
 }
 
 .logo-text p {
