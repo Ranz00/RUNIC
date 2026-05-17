@@ -86,8 +86,6 @@ header {
 .logo img {
   height: 42px;
   width: auto;
-  mix-blend-mode: screen;
-  filter: brightness(1.6) contrast(2);
 }
 
 .logo-text p {
