@@ -58,7 +58,3 @@ RUNIC/
     ├── RUNIC-logo-removebg-preview.png
     └── RUNIC-logo.jpeg
 </pre>
-+-- img/
-    +-- RUNIC-logo-r.png            # Logo principal
-    +-- RUNIC-logo-removebg-preview.png
-    +-- RUNIC-logo.jpeg
