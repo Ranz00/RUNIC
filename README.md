@@ -30,28 +30,34 @@ La estructura React ya está armada en `src/` — componentes, router, shells
 por página — lista para migrar cuando haga falta.
 
 ## Estructura
+<pre>
 RUNIC/
-+-- index.html                      # Landing con las 3 herramientas
-+-- password.html                   # Verificador de contraseñas
-+-- phishing.html                   # Simulador de phishing
-+-- wifi.html                       # Analizador de redes Wi-Fi (fetch API)
-+-- README.md                       # Documentación del proyecto
-+-- css/
-|   +-- styles.css                  # Estilos compartidos, variables CSS, responsive
-+-- js/
-|   +-- password.js                 # Análisis de fortaleza en tiempo real
-|   +-- phishing.js                 # Detección de señales en emails
-|   +-- wifi.js                     # Fetch API + mapeo + render dinámico
-+-- src/                            # Estructura React preparada para migración
-|   +-- App.js                      # Router: /, /password, /phishing, /wifi
-|   +-- components/
-|   |   +-- Header.js               # Header compartido con logo SVG
-|   |   +-- Nav.js                  # Navegación con NavLink activo
-|   +-- pages/
-|       +-- Home.js                 # Landing con tarjetas de herramientas
-|       +-- PasswordAnalyzer.js     # Shell + lógica local de análisis
-|       +-- PhishingDetector.js     # Shell + casos de phishing
-|       +-- WifiAnalyzer.js         # Shell + fetch integration
+├── index.html                      # Landing con las 3 herramientas
+├── password.html                   # Verificador de contraseñas
+├── phishing.html                   # Simulador de phishing
+── wifi.html                       # Analizador de redes Wi-Fi (fetch API)
+├── README.md                       # Documentación del proyecto
+├── css/
+│   └── styles.css                  # Estilos compartidos, variables CSS, responsive
+├── js/
+│   ├── password.js                 # Análisis de fortaleza en tiempo real
+│   ├── phishing.js                 # Detección de señales en emails
+│   └── wifi.js                     # Fetch API + mapeo + render dinámico
+├── src/                            # Estructura React preparada para migración
+│   ├── App.js                      # Router: /, /password, /phishing, /wifi
+│   ├── components/
+│   │   ├── Header.js               # Header compartido con logo SVG
+│   │   └── Nav.js                  # Navegación con NavLink activo
+│   └── pages/
+│       ├── Home.js                 # Landing con tarjetas de herramientas
+│       ├── PasswordAnalyzer.js     # Shell + lógica local de análisis
+│       ├── PhishingDetector.js     # Shell + casos de phishing
+│       └── WifiAnalyzer.js         # Shell + fetch integration
+└── img/
+    ├── RUNIC-logo-r.png            # Logo principal
+    ├── RUNIC-logo-removebg-preview.png
+    └── RUNIC-logo.jpeg
+</pre>
 +-- img/
     +-- RUNIC-logo-r.png            # Logo principal
     +-- RUNIC-logo-removebg-preview.png
