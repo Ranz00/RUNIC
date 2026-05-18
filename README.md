@@ -56,6 +56,3 @@ RUNIC/
     ├── RUNIC-logo-r.png            # Logo principal
     ├── RUNIC-logo-removebg-preview.png
     └── RUNIC-logo.jpeg
-│   └── pages/              # Shells por herramienta
-├── img/                    # Logo y assets
-└── README.md
